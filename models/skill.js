@@ -1,9 +1,9 @@
 const skills = [
-  { id: 0456, skill: "Time Management", criticalSkill: true },
-  { id: 1243, skill: "Cooking", criticalSkill: false },
-  { id: 9832, skill: "Teamwork", criticalSkill: true },
-  { id: 7302, skill: "Skateboard Backflip", criticalSkill: false },
-  { id: 4710, skill: "Organization", criticalSkill: true },
+  { id: 7186, name: "Time Management", critical: true },
+  { id: 1243, name: "Cooking", critical: false },
+  { id: 9832, name: "Teamwork", critical: true },
+  { id: 7302, name: "Skateboard Backflip", critical: false },
+  { id: 4710, name: "Organization", critical: true },
 ];
 
 module.exports = { getAll };
