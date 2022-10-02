@@ -6,8 +6,13 @@ const skills = [
   { id: 4710, name: "Organization", critical: true },
 ];
 
-module.exports = { getAll };
+module.exports = { getAll, getOne };
 
 function getAll() {
   return skills;
+}
+
+function getOne(id) {
+  id = parseInt(id);
+  return skills.find((skill) => id === skill.id);
 }
