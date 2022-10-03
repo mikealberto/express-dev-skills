@@ -12,7 +12,6 @@
       <% skills.forEach(function (skill) { %>
       <li>
         <a href="/skills/<%= skill.id %>"> <%= skill.name %></a>
-        - <%= skill.critical ? "Critical Skill":"Not a Critical Skill"%>
       </li>
       <% }); %>
     </ol>
