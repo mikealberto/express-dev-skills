@@ -6,7 +6,7 @@ const skills = [
   { id: 4710, name: "Organization" },
 ];
 
-module.exports = { getAll, getOne };
+module.exports = { getAll, getOne, create };
 
 function getAll() {
   return skills;
@@ -15,4 +15,9 @@ function getAll() {
 function getOne(id) {
   id = parseInt(id);
   return skills.find((skill) => id === skill.id);
+}
+
+function create(skill) {
+  skill.id = Date.now() % 1000;
+  skills.push(skill);
 }
